@@ -1,7 +1,67 @@
+/* Master Styles */
+
 body {
-  background-color: white;
+    margin: 0px;
+    background-color: white;
+
 }
 
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+/* Font Style */
+
+@font-face { font-family: Gudetama; src: url(Fonts/Sile.ttf) format("truetype"); }
+.Gudetama {
+    font-family: Gudetama; font-size: 4.2em;
+}
+
+/* Nav Styles */
+
+.nav-wrapper {
+    display:flex;
+    justify-content: space-evenly;
+    padding: 38px;
+}
+
+.left-side {
+    display:flex;
+}
+
+.nav-wrapper > .left-side > div {
+    margin-right: 20px;
+    font-size: 0.9em;
+    font-family: Gudetama;
+    /* text-transform: uppercase; */
+
+}
+
+.nav-link-wrapper {
+    height: 22px;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.5s;
+}
+
+.nav-link-wrapper a { /* just grab the "a link" from nav wrapper */
+    color: #8a8a8a;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+.nav-link-wrapper:hover { /* bottom border turns black on hover */
+    border-bottom: 1px solid black;
+    
+}
+
+.nav-link-wrapper a:hover { /* link turns black on hover */
+    color: black;
+}
+
+
+/* Other Styles */
+
 img{
-  width: 60%;
+  width: 50%;
 }
