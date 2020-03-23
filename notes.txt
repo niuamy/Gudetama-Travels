@@ -1,0 +1,25 @@
+Workflow:
+
+1. Build the project
+    - create the folder DONE
+    - adding files 
+    - connecting slides
+
+2. Navbar
+    - A few links and a name (Gudetama)
+    - maybe a logo?
+
+3. Main page
+    -images
+    -titles
+    -descriptions
+    -animations
+    -javascript??
+
+4. Other pages
+    -images
+    -split column layout
+    -content
+
+/*Clearly defined structures makes a lot of
+smaller tasks easier */
