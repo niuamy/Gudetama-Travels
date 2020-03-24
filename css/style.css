@@ -52,7 +52,14 @@ body {
     font-size: 1.3em;
     font-family: sile;
     padding-top: 3px;
-    
+}
+.active-nav-link {
+    border-bottom: 1.5px solid black;
+}
+
+.active-nav-link a {
+    color: orange !important;
+}
     
     /* text-transform: uppercase; */
 
