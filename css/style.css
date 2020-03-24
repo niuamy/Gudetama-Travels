@@ -22,7 +22,7 @@ body {
     display: flex;
     padding: 38px;
     background-color: orange;
-    justify-content: space-evenly;
+    justify-content: center;
     
 }
 
@@ -44,10 +44,14 @@ body {
 }
 .center-side {
     position: absolute;
-    justify-content: center;
+    justify-content: inline;
     display: inline-flex;
     background-color: white;
 
+}
+
+.right-side {
+    background-color:white;
 }
 
 .center-side a {
