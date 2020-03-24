@@ -22,6 +22,7 @@ body {
     display: flex;
     padding: 38px;
     background-color: orange;
+    justify-content: space-evenly;
     
 }
 
@@ -33,7 +34,7 @@ body {
 
 .left-side {
     display: flex;
-    margin-top: -8px;
+    
     font-size: 2em;
     font-family: sile;
     background-color: white;
@@ -41,20 +42,30 @@ body {
     padding-top:5px;
     
 }
-.right-side {
-    display:flex;
-    margin-left: -950px;   
+.center-side {
+    position: absolute;
+    justify-content: center;
+    display: inline-flex;
+    background-color: white;
 
 }
 
-.nav-wrapper > .right-side > div {
+.center-side a {
+    
+    margin-right: auto;
+    margin-left:auto;
+}
+
+.nav-wrapper > .center-side > div {
+    
     margin-right: 40px;
     font-size: 1.3em;
     font-family: sile;
     padding-top: 3px;
 }
+
 .active-nav-link {
-    border-bottom: 1.5px solid black;
+    border-bottom: 1.5px solid orange;
 }
 
 .active-nav-link a {
