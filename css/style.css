@@ -33,11 +33,12 @@ body {
 
 .left-side {
     display: flex;
-    margin-top: -10px;
+    margin-top: -8px;
     font-size: 2em;
     font-family: sile;
     background-color: white;
     padding-right: 85px;
+    padding-top:5px;
     
 }
 .right-side {
@@ -50,6 +51,7 @@ body {
     margin-right: 20px;
     font-size: 1.3em;
     font-family: sile;
+    padding-top: 3px;
     
     /* text-transform: uppercase; */
 
@@ -62,7 +64,7 @@ body {
 }
 
 .border-bottom {
-    margin-bottom: -10px;
+    margin-bottom: -5px;
 }
 
 .nav-link-wrapper a { /* just grab the "a link" from nav wrapper */
