@@ -7,15 +7,29 @@
     <meta name="keywords" content="gudetama, web design, project">
     <meta name="author" content="amy, jacob, emily">
     <title>Gudetama Travels</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/askGudStyle.css">
+    <style>
+    .show{
+      display: inline;
+    }
+
+    .hide{
+      display:none;
+    }
+    </style>
   </head>
     <body>
+      <script>
+        function onSubmit(){
+          document.getElementById('text').className="show";
+        }
+      </script>
         <div class="container">
 
             <div class="nav-wrapper">
 
                 <div class="left-side">
-                    
+
                     <div class="logo">
                         <img src="Images/gudetamaLogo.png"></a>
                     </div>
@@ -50,16 +64,19 @@
                 </div>
 
                 <div class="right-side">
-                    
+
                 </div>
 
             </div>
-    
-        </div>
-        <div> 
-            <h1>Coming Soon...</h1>
-        </div>
-        <center><img src="images\gudetamaMap.JPG" alt="gudetama"></center>
 
+        </div>
+        <center>
+          <img id="mainPic" src="images\gudetamaMap.JPG" alt="gudetama">
+          <h1 id="text" class="hide"> Hi! </h1>
+        </center>
+        <center>
+          <input id="submit" type="text" name="name" placeholder="ask me!">
+          <button onclick("onSubmit()")>Submit</button>
+        </center>
     </body>
 </html>

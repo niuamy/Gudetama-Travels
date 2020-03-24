@@ -1,0 +1,147 @@
+/* Master Styles */
+
+body {
+    margin: 0px;
+    background-color: white;
+
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+/* Font Style */
+
+@font-face { font-family: sile; src: url(sile.ttf);}
+
+
+/* Nav Styles */
+
+.nav-wrapper {
+    display: flex;
+    padding: 38px;
+    background-color: orange;
+    justify-content: space-evenly;
+
+}
+
+.logo {
+    margin-right: -40px;
+    margin-bottom: -200px;
+    width: 8%;
+}
+
+.left-side {
+    display: flex;
+
+    font-size: 2em;
+    font-family: sile;
+    background-color: white;
+    padding-right: 85px;
+    padding-top:5px;
+
+}
+.center-side {
+    position: absolute;
+    justify-content: center;
+    display: inline-flex;
+    background-color: white;
+
+}
+
+.center-side a {
+
+    margin-right: auto;
+    margin-left:auto;
+}
+
+.nav-wrapper > .center-side > div {
+
+    margin-right: 40px;
+    font-size: 1.3em;
+    font-family: sile;
+    padding-top: 3px;
+}
+
+.active-nav-link {
+    border-bottom: 1.5px solid orange;
+}
+
+.active-nav-link a {
+    color: orange !important;
+}
+
+    /* text-transform: uppercase; */
+
+}
+
+.nav-link-wrapper {
+    height: 22px;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.5s;
+}
+
+.border-bottom {
+    margin-bottom: -5px;
+}
+
+.nav-link-wrapper a { /* just grab the "a link" from nav wrapper */
+    color:black;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+.nav-link-wrapper:hover { /* bottom border turns black on hover */
+    border-bottom: 1px solid orange;
+
+}
+
+.nav-link-wrapper a:hover { /* link turns black on hover */
+    color: orange;
+}
+
+
+/* Other Styles */
+
+img{
+  width: 50%;
+}
+
+#mainPic{
+  width: 30%;
+}
+
+input[type=text], select {
+        color: gray;
+        font-size: 30px;
+        font-family: serif;
+        width: 30%;
+        padding: 20px 30px;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin: 0;
+      }
+
+       button {
+        background-color: orange;
+        border: 3px solid white;
+        border-radius: 8px;
+        color: white;
+        padding: 20px 48px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 30px;
+        font-family: serif;
+        margin: 4px 10px;
+        transition-duration: 0.2s;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background-color: white;
+        color:orange ;
+      }
