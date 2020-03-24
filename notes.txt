@@ -20,6 +20,8 @@ Workflow:
     -images
     -split column layout
     -content
+    - ASK GUDETAMA: PROVIDE RANDOMIZED RESPONSES AND ASK FOR USER INPUT, NEED TEXT BOX
 
 /*Clearly defined structures makes a lot of
 smaller tasks easier */
+

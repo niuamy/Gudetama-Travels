@@ -22,7 +22,7 @@ body {
     display: flex;
     padding: 38px;
     background-color: orange;
-    padding-bottom: -1000px;
+    
 }
 
 .logo { 
@@ -43,15 +43,16 @@ body {
 }
 .right-side {
     display:flex;
-    margin-left: -800px;   
+    margin-left: -950px;   
 
 }
 
 .nav-wrapper > .right-side > div {
-    margin-right: 20px;
+    margin-right: 40px;
     font-size: 1.3em;
     font-family: sile;
     padding-top: 3px;
+    
     
     /* text-transform: uppercase; */
 
