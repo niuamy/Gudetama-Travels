@@ -1,0 +1,134 @@
+/* Master Styles */
+
+body {
+    margin: 0px;
+    background-color: white;
+
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+/* Font Style */
+
+@font-face { font-family: sile; src: url(sile.ttf);}
+
+
+/* Nav Styles */
+
+.nav-wrapper {
+    display: flex;
+    padding: 38px;
+    background-color: orange;
+    justify-content: center;
+    
+}
+
+.nav-wrapper img {
+    width: 50%;
+}
+
+.logo { 
+    margin-right: -40px;
+    margin-bottom: -200px;
+    width: 8%;
+}
+
+.left-side {
+    display: flex;
+    
+    font-size: 2em;
+    font-family: sile;
+    background-color: white;
+    padding-right: 85px;
+    padding-top:5px;
+    
+}
+.center-side {
+    position: absolute;
+    justify-content: inline;
+    display: inline-flex;
+    background-color: white;
+
+}
+
+.right-side {
+    background-color:white;
+}
+
+.center-side a {
+    
+    margin-right: auto;
+    margin-left:auto;
+}
+
+.nav-wrapper > .center-side > div {
+    
+    margin-right: 40px;
+    font-size: 1.3em;
+    font-family: sile;
+    padding-top: 3px;
+}
+
+.active-nav-link {
+    border-bottom: 1.5px solid orange;
+}
+
+.active-nav-link a {
+    color: orange !important;
+}
+    
+    /* text-transform: uppercase; */
+
+}
+
+.nav-link-wrapper {
+    height: 22px;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.5s;
+}
+
+.border-bottom {
+    margin-bottom: -5px;
+}
+
+.nav-link-wrapper a { /* just grab the "a link" from nav wrapper */
+    color:black;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+.nav-link-wrapper:hover { /* bottom border turns black on hover */
+    border-bottom: 1px solid orange;
+    
+}
+
+.nav-link-wrapper a:hover { /* link turns black on hover */
+    color: orange;
+}
+
+
+/* About Page Styles */
+
+.about-items-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.about-item-wrapper {
+    position: relative;
+}
+
+.about-image-background {
+    height: 350;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+
+
