@@ -13,27 +13,44 @@ body {
 
 /* Font Style */
 
-@font-face { font-family: Gudetama; src: url(Fonts/Sile.ttf) format("truetype"); }
-.Gudetama {
-    font-family: Gudetama; font-size: 4.2em;
-}
+@font-face { font-family: sile; src: url(sile.ttf);}
+
 
 /* Nav Styles */
 
 .nav-wrapper {
-    display:flex;
-    justify-content: space-evenly;
+    display: flex;
     padding: 38px;
+    background-color: orange;
+    padding-bottom: -1000px;
+}
+
+.logo { 
+    margin-right: -40px;
+    margin-bottom: -200px;
+    width: 8%;
 }
 
 .left-side {
+    display: flex;
+    margin-top: -10px;
+    font-size: 2em;
+    font-family: sile;
+    background-color: white;
+    padding-right: 85px;
+    
+}
+.right-side {
     display:flex;
+    margin-left: -800px;   
+
 }
 
-.nav-wrapper > .left-side > div {
+.nav-wrapper > .right-side > div {
     margin-right: 20px;
-    font-size: 0.9em;
-    font-family: Gudetama;
+    font-size: 1.3em;
+    font-family: sile;
+    
     /* text-transform: uppercase; */
 
 }
@@ -45,7 +62,7 @@ body {
 }
 
 .nav-link-wrapper a { /* just grab the "a link" from nav wrapper */
-    color: #8a8a8a;
+    color:black;
     text-decoration: none;
     transition: color 0.5s;
 }
@@ -56,7 +73,7 @@ body {
 }
 
 .nav-link-wrapper a:hover { /* link turns black on hover */
-    color: black;
+    color: orange;
 }
 
 
