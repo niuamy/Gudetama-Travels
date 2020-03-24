@@ -11,11 +11,6 @@ body {
     grid-template-columns: 1fr;
 }
 
-/* Font Style */
-
-@font-face { font-family: sile; src: url(sile.ttf);}
-
-
 /* Nav Styles */
 
 .nav-wrapper {
@@ -40,7 +35,7 @@ body {
     display: flex;
     
     font-size: 2em;
-    font-family: sile;
+    font-family: sile; 
     background-color: white;
     padding-right: 85px;
     padding-top:5px;
@@ -59,7 +54,6 @@ body {
 }
 
 .center-side a {
-    
     margin-right: auto;
     margin-left:auto;
 }
@@ -78,10 +72,6 @@ body {
 
 .active-nav-link a {
     color: orange !important;
-}
-    
-    /* text-transform: uppercase; */
-
 }
 
 .nav-link-wrapper {
@@ -113,6 +103,7 @@ body {
 /* About Page Styles */
 
 .about-items-wrapper {
+    margin-top: 50px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
@@ -129,6 +120,44 @@ body {
     background-repeat: no-repeat;
 }
 
+.about-item-wrapper > .about-image-background > img {
+    height:350;
+    width: 100%;
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.img-text-wrapper .subtitle {
+    transition: 1s;
+    color: transparent;
+}
+
+.img-text-wrapper {
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.img-text-wrapper:hover .subtitle {
+    transition: 1s;
+    font-weight: 600;
+    color: orange;
+
+}
+
+.img-darken {
+    transition: 1s;
+    filter: brightness(10%);
+
+}
 
 
 

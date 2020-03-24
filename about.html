@@ -58,8 +58,9 @@
             <div class="content-wrapper">
                 <div class="about-items-wrapper">
                     <div class="about-item-wrapper">
-                        <div class="about-image-background" style="background-image: url(Em.jpg)"></div>
- 
+                        <div class="about-image-background" style="background-image: url(images/Em.jpg)">
+                        <img src="images/Em.jpg"> </img>
+                        </div>
                         <div class="img-text-wrapper">
                             <div class="logo-wrapper">
                                 <div class="subtitle">
@@ -71,7 +72,9 @@
                     </div>
 
                     <div class="about-item-wrapper">
-                        <div class="about-image-background" style="background-image:url(Images/Jacob.jpg)"></div>
+                        <div class="about-image-background" style="background-image:url('images/jacob.jpg')">
+                        <img src="images/jacob.jpg"> </img>
+                        </div>
 
                         <div class="img-text-wrapper">
                             <div class="logo-wrapper">
@@ -84,8 +87,9 @@
                     </div>
 
                     <div class="about-item-wrapper">
-                        <div class="about-image-background" style="background-image:url(Images/Amy.jpg)"></div>
-
+                        <div class="about-image-background" style="background-image:url(images/Amy.jpg)">
+                        <img src="images/Amy.jpg"> </img>
+                        </div>
                         <div class="img-text-wrapper">
                             <div class="logo-wrapper">
                                 <div class="subtitle">
@@ -100,8 +104,19 @@
 
             </div>
         </div>
-        
+        <script>
+        const aboutItem = document.querySelectorAll('.about-item-wrapper')
+
+        aboutItem.forEach(aboutIt => {
+            aboutIt.addEventListener('mouseover', () => {
+                aboutIt.childNodes[1].classList.add('img-darken');
+            })
         
 
+            aboutIt.addEventListener('mouseout', () => {
+                aboutIt.childNodes[1].classList.remove('img-darken');
+            })
+        })
+        </script>   
     </body>
 </html>
