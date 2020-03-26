@@ -63,7 +63,7 @@ body {
     margin-right: 40px;
     font-size: 1.3em;
     font-family: sile;
-    padding-top: 3px;
+    padding-top: 2%;
 }
 
 .active-nav-link {
@@ -103,61 +103,83 @@ body {
 /* About Page Styles */
 
 .about-items-wrapper {
-    margin-top: 50px;
+    margin-top: 10px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    
 }
 
 .about-item-wrapper {
     position: relative;
+    padding: 40px;
+    padding-top: 0px;
+    
 }
 
-.about-image-background {
-    height: 350;
+.about-item-wrapper > .about-image-background {
+    transition: 1s ease;
+}
+
+.about-item-wrapper > .about-image-background:hover {
+    -webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05);
+    transition: 1s ease;
+}
+
+
+.about-item-wrapper > .about-image-background {
+    height:500px;
     width: 100%;
+  
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    box-shadow:5px 5px 5px #999; 
+    transition: 1s ease;
 }
 
-.about-item-wrapper > .about-image-background > img {
-    height:350;
-    width: 100%;
-    background-size:cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
 
-.img-text-wrapper .subtitle {
-    transition: 1s;
-    color: transparent;
-}
-
-.img-text-wrapper {
-    position: absolute;
-    top: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    text-align: center;
-    padding-left: 100px;
-    padding-right: 100px;
-}
-
-.img-text-wrapper:hover .subtitle {
-    transition: 1s;
-    font-weight: 600;
-    color: orange;
-
+.about-item-wrapper > .img-text-wrapper > div:hover {
+    -webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05);
+    transition: 1s ease;  
 }
 
 .img-darken {
     transition: 1s;
-    filter: brightness(10%);
-
+    filter: brightness(90%);
 }
+
+/* Author Bio */
+
+.author-wrapper {
+    padding:38px;
+}
+
+.author-title {
+    text-align: center;
+    font-family: sile;
+    font-weight: 5em;
+    font-size: 48px;
+    color: orange;
+}
+
+.author-bio {
+    font-family: sile;
+    font-size: 24px;
+    color: black;
+}
+    
+.about-wrapper {
+    font-family: sile;
+    font-weight: 10em;
+    font-size: 65px;
+    color:orange;
+    text-align: center;
+}
+
 
 
 
