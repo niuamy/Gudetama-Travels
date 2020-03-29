@@ -110,9 +110,24 @@ img{
 
 #mainPic{
   width: 30%;
+  margin-top: 10%;
+  margin-bottom: -5%;
+}
+
+.response-hide{
+  display: none;
+  margin:5% 0 -10% 0;
+  font-size: 80px;
+}
+
+.response-show{
+  display:block;
+  margin:5% 0 -10% 0;
+  font-size: 80px;
 }
 
 input[type=text], select {
+
         color: gray;
         font-size: 30px;
         font-family: serif;
@@ -136,7 +151,7 @@ input[type=text], select {
         display: inline-block;
         font-size: 30px;
         font-family: serif;
-        margin: 4px 10px;
+        margin: 0 10px;
         transition-duration: 0.2s;
         cursor: pointer;
       }

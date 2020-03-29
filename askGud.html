@@ -21,7 +21,17 @@
     <body>
       <script>
         function onSubmit(){
-          document.getElementById('text').className="show";
+          document.getElementById('no').className="response-hide";
+          document.getElementById('yes').className="response-hide";
+          document.getElementById('maybe').className="response-hide";
+          var val = Math.floor((Math.random()*10)+1);
+          if(val < 4){
+            document.getElementById('no').className="response-show";
+          }else if(val < 8 ){
+            document.getElementById('yes').className="response-show";
+          }else{
+            document.getElementById('maybe').className="response-show";
+          }
         }
       </script>
         <div class="container">
@@ -71,12 +81,14 @@
 
         </div>
         <center>
-          <img id="mainPic" src="images\gudetamaMap.JPG" alt="gudetama">
-          <h1 id="text" class="hide"> Hi! </h1>
+          <h1 class ="response-hide" id="no"> NO! </h1>
+          <h1 class ="response-hide" id="yes"> YES! </h1>
+          <h1 class ="response-hide" id="maybe"> maybe? </h1>
+          <img id="mainPic" src="images\askGud.png" alt="gudetama">
         </center>
         <center>
           <input id="submit" type="text" name="name" placeholder="ask me!">
-          <button onclick("onSubmit()")>Submit</button>
+          <button onclick="onSubmit()">Submit</button>
         </center>
     </body>
 </html>
