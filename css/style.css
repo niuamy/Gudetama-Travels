@@ -22,7 +22,7 @@ body {
     display: flex;
     padding: 38px;
     background-color: orange;
-    justify-content: center;
+    justify-content: space-evenly;
     
 }
 
@@ -44,21 +44,16 @@ body {
 }
 .center-side {
     position: absolute;
-    justify-content: inline;
+    justify-content: center;
     display: inline-flex;
     background-color: white;
 
-}
-
-.right-side {
-    background-color:white;
 }
 
 .center-side a {
     
     margin-right: auto;
     margin-left:auto;
-    
 }
 
 .nav-wrapper > .center-side > div {
@@ -66,7 +61,7 @@ body {
     margin-right: 40px;
     font-size: 1.3em;
     font-family: sile;
-    padding-top: 2%;
+    padding-top: 3px;
 }
 
 .active-nav-link {
@@ -78,6 +73,8 @@ body {
 }
     
     /* text-transform: uppercase; */
+
+
 
 .nav-link-wrapper {
     height: 22px;
