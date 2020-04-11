@@ -29,14 +29,19 @@
           document.getElementById('yes').className="response-hide";
           document.getElementById('maybe').className="response-hide";
           document.getElementById('question').className="response-hide";
+          document.getElementById('notQ').className="response-hide";
+
           var val = Math.floor((Math.random()*10)+1);
-          if(val < 4){
+          if(val < 3){
             document.getElementById('no').className="response-show";
-          }else if(val < 8 ){
+          }else if(val < 7 ){
             document.getElementById('yes').className="response-show";
-          }else{
+          }else if (val < 9){
             document.getElementById('maybe').className="response-show";
+          }else{
+            document.getElementById('notQ').className="response-show";
           }
+
         }
       </script>
         <div class="container">
@@ -89,6 +94,7 @@
           <h1 class ="response-hide" id="no"> NO! </h1>
           <h1 class ="response-hide" id="yes"> YES! </h1>
           <h1 class ="response-hide" id="maybe"> maybe? </h1>
+          <h1 class ="response-hide" id="notQ"> i refuse to answer. </h1>
           <h1 class ="response-show" id="question"> ask Gudetama a yes or no question </h1>
           <img id="mainPic" src="images\askGud.png" alt="gudetama">
         </center>
