@@ -1,7 +1,7 @@
 /* Master Styles */
 
 body {
-    margin: 0px;
+    margin:0px;
     background-color: white;
 
 }
@@ -23,10 +23,10 @@ body {
     padding: 38px;
     background-color: orange;
     justify-content: space-evenly;
-    
+
 }
 
-.logo { 
+.logo {
     margin-right: -40px;
     margin-bottom: -200px;
     width: 8%;
@@ -34,13 +34,13 @@ body {
 
 .left-side {
     display: flex;
-    
+
     font-size: 2em;
     font-family: sile;
     background-color: white;
     padding-right: 85px;
     padding-top:5px;
-    
+
 }
 .center-side {
     position: absolute;
@@ -51,13 +51,13 @@ body {
 }
 
 .center-side a {
-    
+
     margin-right: auto;
     margin-left:auto;
 }
 
 .nav-wrapper > .center-side > div {
-    
+
     margin-right: 40px;
     font-size: 1.3em;
     font-family: sile;
@@ -71,7 +71,7 @@ body {
 .active-nav-link a {
     color: orange !important;
 }
-    
+
     /* text-transform: uppercase; */
 
 }
@@ -94,7 +94,7 @@ body {
 
 .nav-link-wrapper:hover { /* bottom border turns black on hover */
     border-bottom: 1px solid orange;
-    
+
 }
 
 .nav-link-wrapper a:hover { /* link turns black on hover */
